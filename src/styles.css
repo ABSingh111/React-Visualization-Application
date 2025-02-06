@@ -1,0 +1,192 @@
+/* General Styles for the App */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    text-align: center;
+  }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Styles for the GraphContainer */
+  .graph-container {
+    width: 100%;
+    height: 80vh;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* React Flow Node Styles */
+  .react-flow__node {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .react-flow__node:hover {
+    transform: scale(1.1);
+  }
+  
+  .react-flow__node.selected {
+    border: 2px solid #2ecc71;
+  }
+
+  /* Node Label Styling */
+  .react-flow__node .react-flow__node-inner {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Background Styling */
+  .react-flow__background {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Node Customization Panel */
+  .node-customization-panel {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .node-customization-panel h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .node-customization-panel .color-picker, 
+  .node-customization-panel .font-size-selector {
+    margin-bottom: 15px;
+  }
+  
+  .node-customization-panel button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .node-customization-panel button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Undo/Redo Buttons Styling */
+  .undo-redo-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .undo-redo-buttons button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .undo-redo-buttons button:hover {
+    background-color: #2980b9;
+  }
+  
+  .undo-redo-buttons button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+  }
+  
+  /* Color Picker Styling */
+  .color-picker-container {
+    margin-top: 10px;
+  }
+  
+  .color-picker {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Font Size Control */
+  .font-size-selector {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .font-size-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+  }
+  
+  /* MiniMap & Controls */
+  .react-flow__minimap {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .react-flow__controls {
+    z-index: 10;
+  }
+  
+  .react-flow__background {
+    background-color: #f1f1f1;
+  }
+  
+  /* General Button Styles */
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
